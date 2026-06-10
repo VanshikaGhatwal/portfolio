@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+  }
+
+ body {
+  @apply bg-white text-slate-900 antialiased;
+}
+
+html.dark body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+  *, *::before, *::after {
+    @apply box-border;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .section-label {
+    @apply font-mono text-xs tracking-widest uppercase text-blue-500 mb-3;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-50 mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-slate-500 dark:text-slate-400 text-lg leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 text-sm font-medium rounded-lg transition-colors duration-200 bg-white dark:bg-slate-900;
+  }
+
+  .card {
+    @apply bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+}
+
+/* Cursor blink for hero */
+.cursor-blink::after {
+  content: "|";
+  @apply text-blue-500 animate-blink ml-0.5;
+}
+
+/* Fade-in animations triggered by IntersectionObserver */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
