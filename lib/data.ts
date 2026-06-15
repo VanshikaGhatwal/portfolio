@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
       "An academic CRUD application for managing book records, price, and publisher information. Built as a college project to learn backend concepts, database operations, and REST API design.",
     tech: ["Java", "MySQL", "JDBC", "Swing"],
     githubUrl: "https://github.com/VanshikaGhatwal/Library-Inventory-System",
-    image: "/projects/sms.png",
+    image: "/library.png",
   },
 
   
