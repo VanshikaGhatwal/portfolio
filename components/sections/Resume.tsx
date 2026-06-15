@@ -56,7 +56,7 @@ export default function Resume() {
             </div>
 
             <p className="text-xs text-slate-400 dark:text-slate-500 mt-3 font-mono">
-              // Replace /public/resume.pdf with your actual resume file
+              {/* Replace /public/resume.pdf with your actual resume file */}
             </p>
           </div>
         </FadeIn>
