@@ -13,7 +13,6 @@ export default function Footer() {
             <span className="text-slate-900 dark:text-slate-100 font-medium">
               Vanshika Ghatwal
             </span>
-            . Built with Next.js & Tailwind CSS.
           </span>
         </div>
 

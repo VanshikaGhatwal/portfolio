@@ -75,51 +75,6 @@ export default function Hero() {
               </a>
             </div>
           </div>
-
-          {/* Right: Avatar illustration */}
-          <div
-            className={`flex-shrink-0 transition-all duration-700 delay-200 ${
-              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-            }`}
-          >
-            <div className="w-52 h-52 md:w-64 md:h-64 rounded-2xl bg-gradient-to-br from-blue-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 border border-slate-200 dark:border-slate-700 flex items-center justify-center shadow-lg">
-              {/* Simple SVG avatar placeholder */}
-              <svg
-                viewBox="0 0 200 200"
-                className="w-36 h-36 md:w-44 md:h-44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Head */}
-                <circle cx="100" cy="72" r="36" fill="#BFDBFE" />
-                {/* Body */}
-                <ellipse cx="100" cy="160" rx="50" ry="36" fill="#93C5FD" />
-                {/* Face */}
-                <circle cx="88" cy="68" r="4" fill="#1E40AF" />
-                <circle cx="112" cy="68" r="4" fill="#1E40AF" />
-                <path
-                  d="M88 84 Q100 94 112 84"
-                  stroke="#1E40AF"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  fill="none"
-                />
-                {/* Code brackets decoration */}
-                <text
-                  x="66"
-                  y="148"
-                  fontFamily="monospace"
-                  fontSize="16"
-                  fill="#3B82F6"
-                  opacity="0.7"
-                >
-                  &lt;/&gt;
-                </text>
-              </svg>
-            </div>
-
-            {/* Floating badge */}
-          </div>
         </div>
       </div>
     </section>
