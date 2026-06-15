@@ -41,13 +41,13 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 2,
-    title: "AI Trip Planner",
+    title: "Trix Cafe landing Page",
     description:
-      "An AI-powered travel planning app that generates personalized itineraries based on destination, budget, and travel preferences. Built as an exploration into integrating AI APIs with a React frontend.",
-    tech: ["React", "Next.js", "Tailwind CSS", "OpenAI API"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    image: "/projects/ai-trip.png",
+      "A modern landing page for Trix Cafe, showcasing the cafe's offerings and ambiance. Built with React and Next.js, it features responsive design, smooth scrolling, and interactive elements to enhance user engagement.",
+    tech: ["React", "Next.js", "Tailwind CSS"],
+    githubUrl: "https://github.com/VanshikaGhatwal/trix-cafe",
+    liveUrl: "https://trix-cafe.vercel.app",
+    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=90",
   },
   {
     id: 3,
@@ -58,13 +58,15 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/VanshikaGhatwal/Library-Inventory-System",
     image: "/projects/sms.png",
   },
+
+  
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
   {
     title: "3rd Place — College Hackathon",
     description:
-      "Competed in a 24-hour college hackathon and secured 3rd place by building a functional web application with the team.",
+      "Competed in a college hackathon and secured 3rd place by building a functional chat bot with the team.",
     icon: "🏆",
   },
   {
@@ -76,7 +78,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     title: "Consistent Participant",
     description:
-      "Actively participates in college coding events, workshops, and development bootcamps.",
+      "Actively participates in college coding events, workshops, hackathons, and development bootcamps.",
     icon: "🎯",
   },
 ];

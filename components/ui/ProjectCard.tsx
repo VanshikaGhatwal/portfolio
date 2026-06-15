@@ -19,6 +19,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Content */}
+      
       <div className="flex flex-col flex-1 p-5">
         <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2 group-hover:text-blue-500 transition-colors">
           {project.title}
