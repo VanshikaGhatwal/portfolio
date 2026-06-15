@@ -1,5 +1,6 @@
 import { Github, ExternalLink, ImageIcon } from "lucide-react";
 import { Project } from "@/types";
+import Image from "next/image";
 
 interface ProjectCardProps {
   project: Project;
@@ -9,17 +10,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="card flex flex-col overflow-hidden group">
       {/* Image placeholder */}
-      <div className="h-44 bg-gradient-to-br from-slate-100 to-blue-50 dark:from-slate-800 dark:to-slate-800/60 flex items-center justify-center border-b border-slate-100 dark:border-slate-800">
-        <div className="flex flex-col items-center gap-2 text-slate-300 dark:text-slate-600">
-          <ImageIcon className="w-8 h-8" />
-          <span className="text-xs font-mono">
-            {project.title.toLowerCase().replace(/\s+/g, "-")}
-          </span>
-        </div>
+      <div className="relative h-44 border-b border-slate-100 dark:border-slate-800">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-cover"
+        />
       </div>
 
       {/* Content */}
-      
+
       <div className="flex flex-col flex-1 p-5">
         <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2 group-hover:text-blue-500 transition-colors">
           {project.title}

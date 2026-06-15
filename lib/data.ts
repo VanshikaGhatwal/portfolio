@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
     tech: ["React", "Next.js", "Tailwind CSS"],
     githubUrl: "https://github.com/VanshikaGhatwal/trix-cafe",
     liveUrl: "https://trix-cafe.vercel.app",
-    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=90",
+    image: "/trix.png",
   },
   {
     id: 3,
